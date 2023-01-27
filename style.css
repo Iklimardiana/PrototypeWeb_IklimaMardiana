@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    font-size: 0.8em;
+}
+
+.logo{
+    font-size:x-large;
+    font-weight: bold;
+    margin: 10px;
+    float:left;
+}
+
+.menu ul{
+    margin: 0px;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: right;
+    list-style: none;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}  
+
+.menu ul li a:hover{
+    display: block;
+    background: rgb(203, 202, 202);
+    /* box-shadow: inset 0px 0px 5px #000; */
+}
+
+.menu ul li .dropdown{
+    display: none;
+}
+
+.menu ul li:hover .dropdown{
+    display: block;
+    background: whitesmoke;
+    position: absolute;
+    padding: 10px;
+    z-index:9999;
+}
+
+.menu ul li:hover .dropdown li{
+    display: block;
+    padding-top: 5px;
+}
+
+.swiper{
+    width: 100%;
+    height: fit-content;
+}
+
+.swiper .swiper-button-next, .swiper .swiper-button-prev{
+    color: white;
+}
+
+.swiper .swiper-pagination{
+    color: white;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background-color: white;
+}
+
+.formulir{
+    width: auto;
+    display: flex;
+    /* background: whitesmoke; */
+    padding-bottom: 30px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.card{
+    flex: 1 1 21rem;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    color: white;
+    font-size: small;
+}
+
+#lamp{
+    background-color: #eb7a70;
+    margin-left: 150px;
+    border-color: #e45347;
+}
+
+#bank{
+    background-color: #689970;
+    border-color: #5e7c60;
+}
+
+#balance{
+    background-color: #5497c3;
+    margin-right: 150px;
+    border-color: #4c7ea5;
+}
+
+#lamp h4, #bank h4, #balance h4{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.containerForm{
+    height: 100%;
+    width: 30.5%;
+    border: solid 0px red;
+    margin: 0 auto;
+}
+
+form label{
+    display: block;
+    padding: 5px; 
+    font-size: small;
+}
+
+input{
+    width: 200%;
+    margin: 2px;
+    outline: none;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+button{
+    width: 210%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid black;
+    background-color: #5497c3;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
